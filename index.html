@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:46px;height:46px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent-sage)">CF</div>
+        <div style="font-weight:700">CANTORIA, FAITH ANGELA D.</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About Me</a>
+        <a href="Team.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-avatar"><img src="cant-removebg-preview-removebg-preview.png" alt="avatar"></div>
+    </header>
+
+    <section id="home" class="hero">
+      <div>
+        <h1 class="fade-up">Welcome to<br>My Web<br>Profile</h1>
+        <div class="subtitle fade-up delay-1">CANTORIA, FAITH ANGELA D.</div>
+        <div class="role fade-up delay-2">Web Designer</div>
+      </div>
+      <div class="portrait fade-up">
+        <div class="photo"><img src="cant-removebg-preview-removebg-preview.png" alt="Faith portrait"></div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const els = document.querySelectorAll('.fade-up');
+      els.forEach((el,i)=>{setTimeout(()=>el.classList.add('visible'),100*(i+1))});
+    });
+  </script>
+</body>
+</html>
